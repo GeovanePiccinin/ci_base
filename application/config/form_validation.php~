@@ -1,0 +1,194 @@
+<?php
+/*
+ 
+ array(
+		'field' => '',
+		'label' => '',
+		'rules' => ''
+  )
+ 
+ */
+
+
+	$config = array (
+	
+		'signup' => array(	
+			array(
+				'field' => 'email',
+				'label' => 'Email',
+				'rules' => 'trim|required|valid_email'
+			),
+			array(
+				'field' => 'passwd',
+				'label' => 'Password',
+				'rules' => 'trim|required|min_length[4]|max_length[40]'
+			)	
+		),
+			
+		'new_account' => array(
+			array(
+				'field' => 'fname',
+				'label' => 'First Name',
+				'rules' => 'trim|required'
+  			),
+			array(
+				'field' => 'lname',
+				'label' => 'Last Name',
+				'rules' => 'trim|required'
+  			),
+  			array(
+				'field' => 'email',
+				'label' => 'Email',
+				'rules' => 'trim|required|valid_email|is_unique[users.email]'
+			),
+			array(
+				'field' => 'passwd',
+				'label' => 'Password',
+				'rules' => 'trim|required|min_length[4]|max_length[40]'
+			),
+			array(
+				'field' => 're_passwd',
+				'label' => 'Repeated Password',
+				'rules' => 'trim|required|matches[passwd]'
+			)
+		),
+		
+		'update_password' => array(
+			array(
+				'field' => 'passwd',
+				'label' => 'Password',
+				'rules' => 'trim|required|min_length[4]|max_length[40]'
+			),
+			array(
+				'field' => 'new_passwd',
+				'label' => 'New Password',
+				'rules' => 'trim|required|min_length[4]|max_length[40]'
+			),
+			array(
+				'field' => 're_new_passwd',
+				'label' => 'Repeated New Password',
+				'rules' => 'trim|required|matches[new_passwd]'
+			)
+		),
+		
+		'question' => array(
+			 array(
+				'field' => 'question_title',
+				'label' => 'Title',
+				'rules' => 'trim|required|max_length[50]'
+  			),
+  			array(
+				'field' => 'question_description',
+				'label' => 'Description',
+				'rules' => 'trim|required|max_length[195]'
+  			),
+  			
+			array(
+				'field' => 'option1',
+				'label' => 'Description (option 1)',
+				'rules' => 'trim|required|max_length[195]'
+  			),
+  			array(
+				'field' => 'option2',
+				'label' => 'Description (option 2)',
+				'rules' => 'trim|required|max_length[195]'
+  			),
+  			array(
+				'field' => 'option3',
+				'label' => 'Description (option 3)',
+				'rules' => 'trim|required|max_length[195]'
+  			),
+  			array(
+				'field' => 'option4',
+				'label' => 'Description (option 4)',
+				'rules' => 'trim|required|max_length[195]'
+  			),
+  			array(
+				'field' => 'correct_answer',
+				'label' => 'Correct answer',
+				'rules' => 'trim|required'
+  			),
+			array(
+				'field' => 'points',
+				'label' => 'Points',
+				'rules' => 'trim'
+  			),
+			array(
+				'field' => 'category',
+				'label' => 'Category',
+				'rules' => 'trim|required'
+  			),
+  			array(
+				'field' => 'level',
+				'label' => 'Level',
+				'rules' => 'trim|required'
+  			)
+		),
+		'question_true_false' => array(
+			 array(
+				'field' => 'question_title',
+				'label' => 'Title',
+				'rules' => 'trim|required|max_length[50]'
+  			),
+  			array(
+				'field' => 'question_description',
+				'label' => 'Description',
+				'rules' => 'trim|required|max_length[195]'
+  			),
+  			
+			
+  			array(
+				'field' => 'correct_answer',
+				'label' => 'Correct answer',
+				'rules' => 'trim|required'
+  			),
+			array(
+				'field' => 'points',
+				'label' => 'Points',
+				'rules' => 'trim'
+  			),
+			array(
+				'field' => 'category',
+				'label' => 'Category',
+				'rules' => 'trim|required'
+  			),
+  			array(
+				'field' => 'level',
+				'label' => 'Level',
+				'rules' => 'trim|required'
+  			)
+		),
+		'category' => array(
+			array(
+				'field' => 'description',
+				'label' => 'Description',
+				'rules' => 'trim|required|max_length[245]'
+			),
+			array(
+				'field' => 'title',
+				'label' => 'Title',
+				'rules' => 'trim|required|max_length[50]'
+  			)
+		),
+		'Quiz' => array(
+			array(
+				'field' => 'description',
+				'label' => 'Description',
+				'rules' => 'trim|required|max_length[245]'
+			),
+			array(
+				'field' => 'title',
+				'label' => 'Title',
+				'rules' => 'trim|required|max_length[50]'
+  			)
+		)
+		
+	
+	
+	
+	
+	
+	
+	);
+
+?>

@@ -1,0 +1,40 @@
+CI_BASE
+
+Descricao: instalacao do codeigniter acrescido das funcionalidades basicas
+	login (login, logout)
+	autorizacao: verificar permissao de usuario ao acessar um metodo
+	mensagens de feedback na tela
+
+Configuracoes realizadas:
+
+	banco de dados: (config/database)
+		consiste na base de dados e no na tabela users
+		rodar o script sql (ci_base) para criar banco e tabela
+
+	autoload:
+		na library form_validation
+		na library database
+		no url helper
+
+	core controller personalizado: My_Controller
+		implementa a visualização das mensagens
+		e a autorizacao de acesso aos metodos
+
+	controller Login
+		autenticacao com a tabela user
+		adicionar usuario
+		editar senha
+
+Instalacao e uso:
+
+	copiar pasta do ci_base para pasta do servidor web
+	configurar arquivo config com endereco url
+	configurar arquivo database com endereco database
+	
+	criar banco de dados com o script sql
+	
+	
+
+
+	
+	
